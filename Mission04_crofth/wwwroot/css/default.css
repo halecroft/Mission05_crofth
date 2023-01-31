@@ -1,0 +1,22 @@
+﻿body {
+    margin-left: 1rem;
+}
+
+img {
+    max-width: 30%;
+    border: 0px;
+    border-radius: 5px;
+}
+
+label {
+    width: 125px;
+    display: inline-block;
+}
+
+input {
+    margin-bottom: 3px;
+}
+
+p {
+    margin-top: 1rem;
+}
