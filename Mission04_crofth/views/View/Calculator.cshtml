@@ -5,21 +5,25 @@
     ViewData["Title"] = "Grade Calculator";
 }
 
+@model CalculatorModel;
+
 <h1>Grade Calculator</h1>
 <form method="post">
     <label>Assignments</label>
-    <input id="inptAssignments" name="Assignments"/><br />
+    <input id="inptAssignments" asp-for="AssignmentGrade"/><br />
     <label>Group Project</label>
-    <input id="inptGroupProject" name="Group Project"/><br />
+    <input id="inptGroupProject" asp-for="GroupProjectGrade"/><br />
     <label>Quizzes</label>
-    <input id="inptQuizzes" name="Quizzes"/><br />
+    <input id="inptQuizzes" asp-for="QuizzesGrade"/><br />
     <label>Midterm Exam</label>
-    <input id="inptMidtermExam" name="Midterm Exam"/><br />
+    <input id="inptMidtermExam" asp-for="MidtermExamGrade"/><br />
     <label>Final Exam</label>
-    <input id="inptFinalExam" name="Final Exam"/><br />
+    <input id="inptFinalExam" asp-for="FinalExamGrade"/><br />
     <label>INTEX</label>
-    <input id="inptINTEX" name="INTEX"/><br />
-    <input id="btnCalculate" type="submit" value="Calculate" />
+    <input id="inptINTEX" asp-for="INTEXGrade"/><br />
+    <input id="btnCalculate" type="submit" value="Calculate"/>
+
+    <div asp-validation-summary="All"></div>
 </form>
 <h4 id="calculatedGrade">Calculated Grade:</h4>
 

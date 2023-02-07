@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission05_crofth.Models;
 
 namespace Mission05_crofth.Controllers
 {
@@ -16,7 +17,7 @@ namespace Mission05_crofth.Controllers
         }
 
         [HttpPost]
-        public IActionResult Calculator (object model)
+        public IActionResult Calculator (CalculatorModel model)
         {
             return View();
         }
