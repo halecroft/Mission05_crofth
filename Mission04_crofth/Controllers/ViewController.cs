@@ -9,7 +9,14 @@ namespace Mission05_crofth.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Calculator ()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Calculator (object model)
         {
             return View();
         }
